@@ -99,6 +99,9 @@ iframe {
   display: none;
 }
 
+a {
+  text-decoration: none;
+}
 
 .photo-container img{
   display: inline-flex;
