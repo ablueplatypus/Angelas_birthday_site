@@ -8,7 +8,7 @@
   const minutesCnt = document.querySelector('#minutes')
   const secondsCnt = document.querySelector('#seconds')
   const headerPhoto = document.querySelector('#header-photo')
-
+  const photoContainer = document.querySelector('.photo-container')
   const currentTime = new Date()
 
   let currentYear = currentTime.getFullYear()
@@ -36,12 +36,17 @@
     hours %= 24
     minutes %= 60
     seconds %= 60
+    
+    let renderMusic = () => {
+      return `<iframe src="http://soundbible.com/mp3/Happy%20Birthday%20To%20You-SoundBible.com-766044851.mp3" allow="autoplay"></iframe>`
+    }
 
     if (feb11th) {
       console.log('Happy Birthday Mom!')
       countdownContainer.style.display = 'none'
       headerPhoto.style.display = 'none'
       happybirthday.style.display = 'block'
+      photoContainer.innerHTML += renderMusic()
 
     } else {
       daysCnt.textContent = days
