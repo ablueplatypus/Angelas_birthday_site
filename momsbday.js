@@ -7,6 +7,7 @@
   const hoursCnt = document.querySelector('#hours')
   const minutesCnt = document.querySelector('#minutes')
   const secondsCnt = document.querySelector('#seconds')
+  const headerPhoto = document.querySelector('#header-photo')
 
   const currentTime = new Date()
 
@@ -39,6 +40,7 @@
     if (feb11th) {
       console.log('Happy Birthday Mom!')
       countdownContainer.style.display = 'none'
+      headerPhoto.style.display = 'none'
       happybirthday.style.display = 'block'
 
     } else {

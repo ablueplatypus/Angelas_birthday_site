@@ -3,9 +3,11 @@ body {
 }
 
 .countdownContainer {
-  position: absolute;
+  display: none;
+  position: relative;
   top: 50%;
   left: 50%;
+  margin: auto;
   transform: translateX(-50%) translateY(-50%);
   text-align: center;
   padding: 10px;
@@ -46,9 +48,18 @@ body {
   font-size: 80px;
 }
 
+#header-photo {
+  display: block;
+  margin: auto;
+}
+
+#header {
+  text-align: center;
+}
+
 #happybirthday {
-  display: none;
-  height: 100%;
+  display: block;
+  height: 200%;
   width: 100%;
   left:0;
   right: 0;
@@ -57,6 +68,7 @@ body {
   position: absolute;
   background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
   background-size: 1800% 1800%;
+  text-align: center;
 
  -webkit-animation: rainbow 18s ease infinite;
  -z-animation: rainbow 18s ease infinite;
@@ -82,4 +94,15 @@ body {
      0%{background-position:0% 82%}
      50%{background-position:100% 19%}
      100%{background-position:0% 82%}
+}
+iframe {
+  display: none;
+}
+
+
+.photo-container img{
+  display: inline-flex;
+  flex-direction: row;
+  width: 450px;
+  padding: 10px;
 }
