@@ -3,7 +3,7 @@ body {
 }
 
 .countdownContainer {
-  /* display: none; */
+  /* display: block; */
   position: relative;
   top: 50%;
   left: 50%;
@@ -44,68 +44,88 @@ body {
   }
 }
 
-.table-info {
-  font-size: 80px;
-}
+  .table-info {
+    font-size: 80px;
+  }
 
-#header-photo {
-  display: block;
-  margin: auto;
-}
+  #header-photo {
+    display: block;
+    margin: auto;
+  }
 
-#header {
-  text-align: center;
-}
+  #header {
+    text-align: center;
+  }
+  #countdown {
+    display: grid;
+  }
 
-#happybirthday {
-  display: none;
-  height: 200%;
-  width: 100%;
-  left:0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
-  background-size: 1800% 1800%;
-  text-align: center;
+  #happybirthday {
+    display: none;
+    height: fit-content;
+    width: 100%;
+    left:0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1800% 1800%;
+    text-align: center;
 
- -webkit-animation: rainbow 18s ease infinite;
- -z-animation: rainbow 18s ease infinite;
- -o-animation: rainbow 18s ease infinite;
-   animation: rainbow 18s ease infinite;}
+   -webkit-animation: rainbow 18s ease infinite;
+   -z-animation: rainbow 18s ease infinite;
+   -o-animation: rainbow 18s ease infinite;
+     animation: rainbow 18s ease infinite;}
 
- @-webkit-keyframes rainbow {
-     0%{background-position:0% 82%}
-     50%{background-position:100% 19%}
-     100%{background-position:0% 82%}
- }
- @-moz-keyframes rainbow {
-     0%{background-position:0% 82%}
-     50%{background-position:100% 19%}
-     100%{background-position:0% 82%}
- }
- @-o-keyframes rainbow {
-     0%{background-position:0% 82%}
-     50%{background-position:100% 19%}
-     100%{background-position:0% 82%}
- }
- @keyframes rainbow {
-     0%{background-position:0% 82%}
-     50%{background-position:100% 19%}
-     100%{background-position:0% 82%}
-}
-iframe {
-  display: none;
-}
+   @-webkit-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @-moz-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @-o-keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+   }
+   @keyframes rainbow {
+       0%{background-position:0% 82%}
+       50%{background-position:100% 19%}
+       100%{background-position:0% 82%}
+  }
+  iframe {
+    display: none;
+  }
 
-a {
-  text-decoration: none;
-}
+  a {
+    text-decoration: none;
+  }
 
-.photo-container img{
-  display: inline-flex;
-  flex-direction: row;
-  width: 450px;
-  padding: 10px;
-}
+  .photo-container img{
+    display: inline-flex;
+    flex-direction: row;
+    width: 600px;
+    padding: 10px;
+  }
+
+
+  .photoContainer img.zoomed {
+    width: 600px;
+  }
+
+
+  .display-btn {
+    font-size: 2rem;
+    border-radius: 16px;
+    margin: 10px 0;
+    background-color: lightgreen;
+  }
+
+  .button {
+    text-align: center;
+  }

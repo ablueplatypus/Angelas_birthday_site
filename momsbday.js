@@ -9,6 +9,7 @@
   const secondsCnt = document.querySelector('#seconds')
   const headerPhoto = document.querySelector('#header-photo')
   const photoContainer = document.querySelector('.photo-container')
+  const hbHeader = document.querySelector('.hide-me')
   const currentTime = new Date()
 
   let currentYear = currentTime.getFullYear()
@@ -36,7 +37,7 @@
     hours %= 24
     minutes %= 60
     seconds %= 60
-    
+
     let renderMusic = () => {
       return `<iframe src="http://soundbible.com/mp3/Happy%20Birthday%20To%20You-SoundBible.com-766044851.mp3" allow="autoplay"></iframe>`
     }
@@ -57,3 +58,19 @@
     } // end of if (feb11th)
   } // end of function
   countdown()
+
+  const showPhotos = () => {
+    countdownContainer.style.visability = 'hidden';
+    headerPhoto.style.display = 'none';
+    happybirthday.style.display = 'block';
+    hbHeader.style.visability = 'hidden';
+  }
+
+
+    const showCountdown = () => {
+      countdownContainer.style.visability = 'visable';
+      headerPhoto.style.display = 'block';
+      happybirthday.style.display = 'none';
+      hbHeader.style.visability = 'hidden';
+
+    }
