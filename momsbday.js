@@ -59,6 +59,17 @@
   } // end of function
   countdown()
 
+  const zoomIn = () => {
+    let zoom = document.querySelector('.zoomed')
+    console.log("hello", zoom.style.width, photoContainer.style.width)
+    if(zoom.style.width === '') {
+      zoom.style.width = '50%';
+    } else {
+      zoom.style.width = '';
+    }
+  }
+
+
   const showPhotos = () => {
     countdownContainer.style.visability = 'hidden';
     headerPhoto.style.display = 'none';
@@ -66,11 +77,9 @@
     hbHeader.style.visability = 'hidden';
   }
 
-
-    const showCountdown = () => {
-      countdownContainer.style.visability = 'visable';
-      headerPhoto.style.display = 'block';
-      happybirthday.style.display = 'none';
-      hbHeader.style.visability = 'hidden';
-
-    }
+  const showCountdown = () => {
+    countdownContainer.style.visability = 'visable';
+    headerPhoto.style.display = 'block';
+    happybirthday.style.display = 'none';
+    hbHeader.style.visability = 'hidden';
+  }
